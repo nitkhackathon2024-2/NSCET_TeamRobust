@@ -1,0 +1,128 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* No default margin */
+}
+
+/* Container styling */
+.container {
+    background-color: white; /* Container background */
+    padding: 30px; /* Inner padding for the container */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Drop shadow */
+    width: 600px; /* Increased width of the container */
+    border: 2px solid #6a11cb; /* Border surrounding the container */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+    margin-top: -50px; /* Negative margin to pull the container up */
+}
+
+/* Fade-in animation for the container */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Heading style */
+h2 {
+    color: #333; /* Heading color */
+    text-align: center; /* Centered heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* File upload section */
+.file-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Space below the file upload section */
+}
+
+.file-upload label {
+    background-color: #28a745; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Inner padding for the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Transition effect on hover */
+}
+
+.file-upload label:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Hide the actual file input button */
+#file-input {
+    display: none; /* Hidden file input */
+}
+
+/* Upload button styling */
+.btn-upload {
+    width: 100%; /* Full width */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    padding: 12px; /* Inner padding for the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Transition effect on hover */
+}
+
+/* Button hover effect */
+.btn-upload:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling for the result box */
+.result-box {
+    background-color: #f9f9f9; /* Result box background */
+    padding: 20px; /* Inner padding */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ddd; /* Border around the result box */
+    margin-top: 20px; /* Space above the result box */
+    position: relative; /* Position for absolute children */
+}
+
+/* Confidence score box styling */
+.confidence-score-box {
+    position: absolute; /* Absolute positioning */
+    bottom: 10px; /* Move it inside the box */
+    left: 10px; /* Positioning from the left */
+    background-color: #ff4d4d; /* Background color */
+    color: white; /* Text color */
+    padding: 5px 10px; /* Inner padding */
+    border-radius: 5px; /* Rounded corners */
+    animation: pulse 1s infinite alternate; /* Pulse animation */
+}
+
+/* Pulse animation for the confidence score box */
+@keyframes pulse {
+    from { background-color: #ff4d4d; }
+    to { background-color: #ff7373; }
+}
+
+/* Link styling */
+a {
+    text-decoration: none; /* No underline */
+    color: #007bff; /* Link color */
+    margin-top: 20px; /* Space above the link */
+    display: inline-block; /* Inline block display */
+    transition: color 0.3s; /* Transition effect on hover */
+}
+
+/* Link hover effect */
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+.confidence-score-box {
+    background-color: #ff4d4d;  /* Red color for visibility */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px; /* Margin for spacing */
+    text-align: center; /* Centered text */
+}
