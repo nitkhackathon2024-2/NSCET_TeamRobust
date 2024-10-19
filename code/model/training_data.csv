@@ -1,0 +1,5 @@
+text,label
+"This is a utility bill","utility_bill"
+"This is an ID card","id_card"
+"This is a bank statement","bank_statement"
+"This is a driver's license","drivers_license"
