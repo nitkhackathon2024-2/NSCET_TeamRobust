@@ -1,0 +1,8 @@
+Flask
+Flask-Cors
+pandas
+scikit-learn
+pytesseract
+pdf2image
+Pillow
+joblib
