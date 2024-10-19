@@ -4,7 +4,7 @@
 
 ### Team Members:
 - **Vigneshwar S** - Team Leader
-- **Karan** - Team Member
+- **Karan S** - Team Member
 - **Sathya Seelan M** - Team Member
 
 ### Theme:
