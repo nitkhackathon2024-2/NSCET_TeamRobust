@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Document Processing</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Your Document</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="file-upload">
+                <label for="file-input">Choose File</label>
+                <input id="file-input" type="file" name="file" accept=".pdf,.jpg,.jpeg,.png" required>
+            </div>
+            <button type="submit" class="btn-upload">Upload and Process</button>
+        </form>
+    </div>
+
+    <!-- JavaScript Section -->
+    <script>
+        const fileInput = document.getElementById('file-input');
+        const label = document.querySelector('.file-upload label');
+
+        fileInput.addEventListener('change', () => {
+            if (fileInput.files.length > 0) {
+                label.textContent = `Selected: ${fileInput.files[0].name}`;
+                label.style.backgroundColor = '#ffc107';
+                label.style.color = '#333';
+            }
+        });
+    </script>
+</body>
+</html>
